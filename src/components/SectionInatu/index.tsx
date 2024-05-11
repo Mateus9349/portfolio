@@ -2,7 +2,7 @@ import Image from 'next/image';
 import styles from './SectionInatu.module.scss';
 
 
-export default function SectionProjetoInatu() {
+export default function SectionInatu() {
     return (
         <section className={styles.principal}>
             <h1>Plataforma Inatú</h1>
@@ -45,7 +45,7 @@ export default function SectionProjetoInatu() {
                 />
                 <p>
                     Sistema de login utilizando serviços do Firebase para autenticação,
-                    usando contexto global para gerenciar usuraios "AuthContext".
+                    usando contexto global para gerenciar usuraios AuthContext.
                 </p>
             </div>
 

@@ -27,7 +27,7 @@ const CardProjeto: React.FC<CardProjetoProps> = (props) => {
                     <motion.div className="inner" drag="x" dragConstraints={{ right: 0, left: -whidth }}>
                         {props.images.map((image, index) => (
                             <motion.div className="item" key={index}>
-                                <Image src={image} alt={`Imagem ${index + 1}`} />
+                                <Image src={image} alt={`Imagem ${index + 1}`} width={300}/>
                             </motion.div>
                         ))}
                     </motion.div>
