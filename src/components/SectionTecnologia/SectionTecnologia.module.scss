@@ -1,0 +1,64 @@
+@import '../../styles/variaveis';
+
+.container{
+    @include flexCenter(row);
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 28px;
+    
+    .image{
+        max-width: 60%;
+        border-radius: 35px;
+    }
+
+    .containerSkills{
+        @include flexCenter(column);
+        gap: 10px;
+        align-items: center;
+        margin-left: 10px;
+
+        .title{
+            font-size: 24px;
+            font-family: $fontStandart;
+        }
+
+        ul{
+            .skill{
+                list-style-type: disc;
+                font-family: $fontText;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Estilos para tablets */
+}
+
+@media only screen and (min-width: 1024px) {
+    /* Estilos para desktops e laptops */
+    .container{
+        
+        
+        .image{
+            max-width: 30%;
+            border-radius: 35px;
+        }
+    
+        .containerSkills{
+            
+    
+            .title{
+                font-size: 45px;
+            }
+    
+            ul{
+                .skill{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}

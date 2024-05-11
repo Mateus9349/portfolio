@@ -1,0 +1,96 @@
+@import '../../styles/variaveis';
+
+
+/* Estilos para smartphones */
+.container {
+    @include flexCenter(column);
+    align-items: center;
+    gap: 25px;
+    background-color: $emphasis;
+    height: 20vh;
+    border-radius: 0 0 25px 25px;
+    box-shadow: 0 0 80px rgba(0, 0, 0, 1.5);
+
+    .title {
+        @include flexCenter(row);
+        justify-content: center;
+        align-items: center;
+        min-width: 30%;
+        max-width: 50%;
+        font-family: $fontStandart;
+
+        .link {
+            font-size: 30px;
+            text-align: center;
+            color: $interactive;
+            text-decoration: none;
+            font-family: $fontStandart;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                color: $bg;
+                transform: rotate(-5deg);
+            }
+        }
+    }
+
+    .disable {
+        display: flex;
+        justify-content: space-between;
+
+        .img {
+            max-width: 10%;
+        }
+
+        .link {
+            display: none;
+        }
+    }
+
+    .nav {
+        @include flexCenter(column);
+        justify-content: space-around;
+        gap: 10px;
+        min-width: 50%;
+        align-items: center;
+        color: $interactive;
+
+        .link {
+            font-size: 24px;
+            text-decoration: none;
+            color: $interactive;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                color: $bg;
+                transition: 0.5s;
+                transform: translateY(-5px);
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Estilos para tablets */
+}
+
+@media only screen and (min-width: 1024px) {
+    /* Estilos para desktops e laptops */
+    .container{
+        @include flexCenter(row);
+        justify-content: space-around;
+
+        .title{
+            .link{
+                font-size: 55px;
+            }
+        }
+
+        .nav{
+            @include flexCenter(row);
+            min-width: 30%;
+            gap: 10px;
+        }
+    }
+}
