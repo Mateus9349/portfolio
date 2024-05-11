@@ -8,6 +8,7 @@ import 'swiper/css';
 import 'swiper/css/effect-cube';
 import 'swiper/css/pagination';
 import { EffectCube, Pagination } from 'swiper/modules';
+import Image from 'next/image';
 
 // Certifique-se de registrar os módulos necessários
 register();
@@ -30,22 +31,22 @@ const Carousel: React.FC = () => {
     >
       <SwiperSlide className={style.slide}>
         <h3>Faculdade</h3>
-        <img className={style.img} src="assets/img/faculdade.jpeg" alt="Slide 1" />
+        <Image className={style.img} width={300} height={200} src="/assets/img/faculdade.jpeg" alt="Slide 1" />
       </SwiperSlide>
 
       <SwiperSlide className={style.slide}>
         <h3>Exército</h3>
-        <img className={style.img} src="assets/img/quartel.jpeg" alt="Slide 2" />
+        <Image className={style.img} width={300} height={200} src="/assets/img/quartel.jpeg" alt="Slide 2" />
       </SwiperSlide>
 
       <SwiperSlide className={style.slide}>
         <h3>Estágio</h3>
-        <img className={style.img} src="assets/img/camara.jpeg" alt="Slide 3" />
+        <Image className={style.img} width={300} height={200} src="/assets/img/camara.jpeg" alt="Slide 3" />
       </SwiperSlide>
 
       <SwiperSlide className={style.slide}>
         <h3>Formação Web e Mobile</h3>
-        <img className={style.img} src="assets/img/curso_web_mobile.jpg" alt="Slide 4" />
+        <Image className={style.img} width={300} height={200} src="/assets/img/curso_web_mobile.jpg" alt="Slide 4" />
       </SwiperSlide>
     </Swiper>
   );

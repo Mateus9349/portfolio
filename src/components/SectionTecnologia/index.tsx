@@ -1,8 +1,14 @@
+import Image from 'next/image';
 import styles from './SectionTecnologia.module.scss';
 export default function SectionTecnologia() {
     return (
         <section className={styles.container}>
-            <img className={styles.image} src='assets/img/Foto_curriculo2.jpg'/>
+            <Image className={styles.image}
+                src='/assets/img/Foto_curriculo2.jpg'
+                alt='Foto Curriculo'
+                width={600}
+                height={500}
+            />
 
             <div className={styles.containerSkills}>
                 <h1 className={styles.title}>Tecnologias</h1>

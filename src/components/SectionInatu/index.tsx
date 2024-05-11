@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from './SectionInatu.module.scss';
 
 
@@ -5,7 +6,13 @@ export default function SectionProjetoInatu() {
     return (
         <section className={styles.principal}>
             <h1>Plataforma Inatú</h1>
-            <img className={styles.image} src={'assets/img/inatu/principalInatu.png'} />
+            <Image
+                className={styles.image}
+                src={'/assets/img/inatu/principalInatu.png'}
+                alt='projeto'
+                width={300}
+                height={200}
+            />
             <p>
                 O Sistema de Gestão Produtiva da marca coletiva das comunidades da Amazônia.
             </p>
@@ -29,7 +36,13 @@ export default function SectionProjetoInatu() {
 
             <div className={styles.card}>
                 <h2>Login</h2>
-                <img className={styles.image} src={'assets/img/inatu/loginInatu.png'} />
+                <Image
+                    className={styles.image}
+                    src={'/assets/img/inatu/loginInatu.png'}
+                    alt='projeto'
+                    width={300}
+                    height={200}
+                />
                 <p>
                     Sistema de login utilizando serviços do Firebase para autenticação,
                     usando contexto global para gerenciar usuraios "AuthContext".
@@ -38,7 +51,12 @@ export default function SectionProjetoInatu() {
 
             <div className={styles.card}>
                 <h2>Controle e Precificação de Processos</h2>
-                <img className={styles.image} src={'assets/img/inatu/processosInatu.png'} />
+                <Image
+                    className={styles.image}
+                    src={'/assets/img/inatu/processosInatu.png'}
+                    alt='projeto'
+                    width={300}
+                    height={200} />
                 <p>
                     Cada matéria prima passa por diferentes processos para que seja extraido o óleo.
                     A plataforma conduz o passa a passo registrando todos os gastos, como mão de obra,
@@ -46,9 +64,15 @@ export default function SectionProjetoInatu() {
                 </p>
             </div>
 
-            <div className={styles.card}> 
+            <div className={styles.card}>
                 <h2>CRUD</h2>
-                <img className={styles.image} src={'assets/img/inatu/CRUDInatu.png'} />
+                <Image
+                    className={styles.image}
+                    src={'/assets/img/inatu/CRUDInatu.png'}
+                    alt='projeto'
+                    width={300}
+                    height={200}
+                />
                 <p>
                     Todos as operações principais são realizadas, get, post, put e delete.
                 </p>
@@ -56,7 +80,13 @@ export default function SectionProjetoInatu() {
 
             <div className={styles.card}>
                 <h2>Rastreabilidade</h2>
-                <img className={styles.image} src={'assets/img/inatu/rastreabilidadeInatu.png'} />
+                <Image
+                    className={styles.image}
+                    src={'/assets/img/inatu/rastreabilidadeInatu.png'}
+                    alt='projeto'
+                    width={300}
+                    height={200}
+                />
                 <p>
                     Todas as informações de coleta e de processo que o óleo sofreu são armazenadas
                     e a cada lote frabricado  é gerado um QRcode que leva a página com as informações

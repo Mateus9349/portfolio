@@ -2,14 +2,15 @@
 
 .container{
     @include flexCenter(row);
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     width: 60%;
     margin: auto;
     margin-top: 28px;
     
     .image{
-        max-width: 60%;
+        width: 200px;
+        height: 300px;
         border-radius: 35px;
     }
 
@@ -43,7 +44,8 @@
         
         
         .image{
-            max-width: 30%;
+            width: 300px;
+            height: 500px;
             border-radius: 35px;
         }
     
