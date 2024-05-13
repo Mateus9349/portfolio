@@ -10,8 +10,8 @@ export default function SectionInatu() {
                 className={styles.image}
                 src={'/assets/img/inatu/principalInatu.png'}
                 alt='projeto'
-                width={300}
-                height={200}
+                width={1000}
+                height={1000}
             />
             <p>
                 O Sistema de Gestão Produtiva da marca coletiva das comunidades da Amazônia.
@@ -40,8 +40,8 @@ export default function SectionInatu() {
                     className={styles.image}
                     src={'/assets/img/inatu/loginInatu.png'}
                     alt='projeto'
-                    width={300}
-                    height={200}
+                    width={1000}
+                    height={1000}
                 />
                 <p>
                     Sistema de login utilizando serviços do Firebase para autenticação,
@@ -55,8 +55,8 @@ export default function SectionInatu() {
                     className={styles.image}
                     src={'/assets/img/inatu/processosInatu.png'}
                     alt='projeto'
-                    width={300}
-                    height={200} />
+                    width={1000}
+                    height={1000} />
                 <p>
                     Cada matéria prima passa por diferentes processos para que seja extraido o óleo.
                     A plataforma conduz o passa a passo registrando todos os gastos, como mão de obra,
@@ -70,8 +70,8 @@ export default function SectionInatu() {
                     className={styles.image}
                     src={'/assets/img/inatu/CRUDInatu.png'}
                     alt='projeto'
-                    width={300}
-                    height={200}
+                    width={1000}
+                    height={1000}
                 />
                 <p>
                     Todos as operações principais são realizadas, get, post, put e delete.
@@ -84,8 +84,8 @@ export default function SectionInatu() {
                     className={styles.image}
                     src={'/assets/img/inatu/rastreabilidadeInatu.png'}
                     alt='projeto'
-                    width={300}
-                    height={200}
+                    width={1000}
+                    height={1000}
                 />
                 <p>
                     Todas as informações de coleta e de processo que o óleo sofreu são armazenadas

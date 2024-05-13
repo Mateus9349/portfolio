@@ -1,0 +1,81 @@
+@import '../../styles/variaveis';
+
+
+
+.cardCurso {
+    @include flexCenter(column);
+    align-items: center;
+    margin-top: 10px;
+    font-family: $fontStandart;
+
+    .containerImgCurso {}
+
+    .containerCurso {
+        .titulo {
+            text-align: center;
+        }
+
+        .text {
+            text-align: justify;
+            word-break: break-all;
+            text-indent: 20px;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Estilos para tablets */
+}
+
+@media only screen and (min-width: 1024px) {
+
+    /* Estilos para desktops e laptops */
+    .cardCurso {
+        @include flexCenter(row);
+        justify-content: space-between;
+        align-items: center;
+        margin: 40px 50px;
+        padding: 1em 5em;
+        box-sizing: border-box;
+        background-color: blanchedalmond;
+        border-radius: 30px;
+        height: 40vh;
+        background: url('../../../public/assets/img/fundo_tec.jpg') no-repeat;
+        background-size: cover;
+    }
+
+    .containerImgCurso {
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .imgCurso {
+        width: 19em;
+        height: 13em;
+        max-width: 25em;
+        transition: 1.5s;
+    }
+
+    .imgCurso:hover {
+        height: 18em;
+        width: 23em;
+    }
+
+    .containerCurso {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 65%;
+        height: 40%;
+    }
+
+    .titulo {
+        text-align: center;
+        align-self: flex-start;
+        margin-bottom: 40px;
+    }
+
+    .texto {
+        text-align: justify;
+    }
+}

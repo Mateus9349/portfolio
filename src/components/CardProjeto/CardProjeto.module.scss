@@ -1,0 +1,48 @@
+@import '../../styles/variaveis';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 15px auto;
+    text-align: center;
+    font-family: $fontText;
+
+    .main {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+
+        .carrossel {
+            cursor: grab;
+            overflow: hidden;
+
+            .inner {
+                display: flex;
+            }
+
+            .item {
+                width: 800px;
+                height: 200px;
+                padding: 0;
+
+                img {
+                    width: 95%;
+                    height: 100%;
+                    border-radius: 12px;
+                    pointer-events: none;
+
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    /* Estilos para desktops e laptops */
+}

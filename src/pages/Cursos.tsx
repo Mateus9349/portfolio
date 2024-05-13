@@ -1,5 +1,8 @@
 import CardCurso from "@/components/CardCurso";
+import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
+
+import '../app/globals.css';
 
 export default function Cursos() {
     return (
@@ -18,6 +21,18 @@ export default function Cursos() {
             React;
             React-native;
 '
+            />
+
+            <CardCurso
+                imagem='/assets/img/certificados/Mateus Vinicius Passos de Lima - Curso Java_ aplicando a Orientação a Objetos - Alura_pages-to-jpg-0001.jpg'
+                titulo='JAVA: APLICANDO A ORIENTAÇÃO AOBJETOS'
+                texto='Este curso abordou os seguintes tópicos:
+
+                Modelando o ScreenMatch
+                Controlando o acesso e a escrita nos dados da aplicação
+                Reaproveitando características e comportamentos
+                Aplicando comportamentos em comum
+                Consolidando conhecimentos'
             />
 
             <CardCurso
@@ -244,6 +259,8 @@ export default function Cursos() {
             Identificar e resolver erros;
             Realizar a manutenção preventiva e corretiva de computadores.'
             />
+
+            <Footer />
         </main>
 
 
